@@ -4,10 +4,6 @@ from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
 from dotenv import load_dotenv
 
-from langchain_huggingface import ChatHuggingFace
-from langchain_huggingface.llms import HuggingFaceEndpoint
-from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.messages import HumanMessage, SystemMessage
 
 load_dotenv()
 
