@@ -1,6 +1,7 @@
 # Code which retrieves the relevant documents from the vector database 
 # and then uses a LLM to answer the question.
 # Please note that this is a one off generation (this means that this is not a conversational RAG)
+# JUST BASIC GENERATION
 
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
