@@ -63,7 +63,7 @@ Please provide a clear, helpful answer using only the information from these doc
 """
 
 llm = HuggingFaceEndpoint(
-    model="meta-llama/Llama-3.1-8B-Instruct",
+    model="meta-llama/Llama-3.1-8B-Instruct", # you have to make sure that this model has an InferenceProvider on the HuggingFace Website.
     task="text-generation",
     max_new_tokens=200,
     temperature=0.7,
