@@ -2,8 +2,6 @@
 # and then uses a LLM to answer the question.
 # Please note that this is a one off generation (this means that this is not a conversational RAG)
 
-import os
-
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
 from dotenv import load_dotenv
@@ -62,8 +60,6 @@ Documents :
 
 Please provide a clear, helpful answer using only the information from these documents. If you can't find the answer in the documents, say "I don't have enough information to answer the question".
 """
-
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
 
 llm = HuggingFaceEndpoint(
     model="meta-llama/Llama-3.1-8B-Instruct",
