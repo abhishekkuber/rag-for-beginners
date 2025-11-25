@@ -2,7 +2,6 @@
 # and then uses a LLM to answer the question.
 # Here, the can ask follow up questions, and the LLM can answer them while keeping the previous context in mind.
 
-from doctest import REPORT_CDIFF
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings, ChatHuggingFace
 from langchain_huggingface.llms import HuggingFaceEndpoint
@@ -59,7 +58,6 @@ def start_chat(llm_model, retriever):
         
         chat_history = ask_question(question, chat_history, llm_model, retriever)
 
-        
 
 def main():
     load_dotenv()
@@ -94,8 +92,5 @@ def main():
     start_chat(model, retriever)
 
 
-
-
 if __name__ == "__main__":
     main()
-    
