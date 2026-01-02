@@ -78,7 +78,7 @@ model = ChatHuggingFace(llm=llm)
 # ])
 
 messages = [
-    SystemMessage(content="You are a helpful assistant that answers questions based on the provided documents. If you can't find the answer in the "),
+    SystemMessage(content="You are a helpful assistant that answers questions based on the provided documents. If you can't find the answer in the documents, say 'I don't have enough information to answer the question'."),
     HumanMessage(content=combined_input)
 ]
 
