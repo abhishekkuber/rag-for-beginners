@@ -9,7 +9,6 @@ from dotenv import load_dotenv
 
 from langchain_huggingface import ChatHuggingFace
 from langchain_huggingface.llms import HuggingFaceEndpoint
-from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.messages import HumanMessage, SystemMessage
 
 load_dotenv()
@@ -30,7 +29,7 @@ db = Chroma(
 # query = "Which island does SpaceX lease for its launches in the Pacific?"
 # query = "Has Tesla been involved in any lawsuits?"
 # query = "What is the working philosophy at Google?"
-query = "What was Nvidia's first product?"
+query = "Can you give me some passages about love?"
 
 
 retriever = db.as_retriever(search_kwargs={"k": 3}) # get the top 3 chunks
