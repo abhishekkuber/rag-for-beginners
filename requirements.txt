@@ -1,8 +1,9 @@
 langchain
 langchain-community
 langchain_text_splitters
-langchain_openai
 langchain_huggingface
 langchain_chroma
 python-dotenv
 sentence-transformers
+unstructured[pdf]
+olefile>=0.47
