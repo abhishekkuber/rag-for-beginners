@@ -7,3 +7,5 @@ python-dotenv
 sentence-transformers
 unstructured[pdf]
 olefile>=0.47
+rank_bm25
+langchain_cohere
